@@ -2,12 +2,12 @@ main {
     .description {
         text-align: center;
         background-color: $color;
+        @include grid("img img img img" "p p p p", center, center, center,none);
 
         .yo {
-            @include grid("img img img img" "p p p p", center, center, center, none);
-            height: 500px;
 
             img {
+                margin-top: 50px;
                 width: 400px;
                 border-radius: 700px;
                 grid-area: img;
@@ -17,7 +17,27 @@ main {
                 font-family: 'Wix Madefor Display', sans-serif;
                 font-size: 20px;
                 grid-area: p;
+                margin-bottom: 40px;
+                padding: 10px;
             }
+        }
+    }
+
+    .sobre-mi {
+        text-align: center;
+        background-color: $color3;
+        @include grid("h2 h2 h2 h2" "pp pp pp pp", center, center, center,none);
+
+        h2 {
+            font-size: 30px;
+            font-family: 'Cantarell', sans-serif;
+            grid-area: h2;
+        }
+
+        p {
+            font-family: 'Wix Madefor Display', sans-serif;
+            font-size: 20px;
+            grid-area: pp;
         }
     }
 }

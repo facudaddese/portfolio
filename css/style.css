@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 header {
-  background-color: #D5DBDB;
+  background-color: #E5E7E9;
   border-bottom: 1px solid #000000; }
   header nav {
     display: flex;
@@ -38,20 +39,39 @@ header {
 
 main .description {
   text-align: center;
-  background-color: #D5DBDB; }
-  main .description .yo {
-    display: grid;
-    grid-template-areas: "img img img img" "p p p p";
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    grid-gap: none;
-    height: 500px; }
-    main .description .yo img {
-      width: 400px;
-      border-radius: 700px;
-      grid-area: img; }
-    main .description .yo p {
-      font-family: 'Wix Madefor Display', sans-serif;
-      font-size: 20px;
-      grid-area: p; }
+  background-color: #D5DBDB;
+  display: grid;
+  grid-template-areas: "img img img img" "p p p p";
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-gap: none; }
+  main .description .yo img {
+    margin-top: 50px;
+    width: 400px;
+    border-radius: 700px;
+    grid-area: img; }
+  main .description .yo p {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 20px;
+    grid-area: p;
+    margin-bottom: 40px;
+    padding: 10px; }
+
+main .sobre-mi {
+  text-align: center;
+  background-color: #E5E7E9;
+  display: grid;
+  grid-template-areas: "h2 h2 h2 h2" "pp pp pp pp";
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-gap: none; }
+  main .sobre-mi h2 {
+    font-size: 30px;
+    font-family: 'Cantarell', sans-serif;
+    grid-area: h2; }
+  main .sobre-mi p {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 20px;
+    grid-area: pp; }
