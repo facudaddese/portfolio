@@ -1,9 +1,39 @@
 header {
+    background-color: #D5DBDB;
 
     nav {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         justify-content: space-between;
+
+        div {
+            margin-left: 25px;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 50px;
+            margin-right: 25px;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: #000000;
+                    font-size: 18px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
     }
 }

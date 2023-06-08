@@ -3,8 +3,27 @@
   padding: 0;
   box-sizing: border-box; }
 
-header nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between; }
+header {
+  background-color: #D5DBDB; }
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    header nav div {
+      margin-left: 25px; }
+      header nav div img {
+        width: 100px; }
+    header nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 50px;
+      margin-right: 25px; }
+      header nav ul li {
+        list-style: none; }
+        header nav ul li a {
+          text-decoration: none;
+          color: #000000;
+          font-size: 18px; }
+          header nav ul li a:hover {
+            text-decoration: underline; }
