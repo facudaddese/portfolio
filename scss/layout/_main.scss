@@ -1,0 +1,23 @@
+main {
+    .description {
+        text-align: center;
+        background-color: $color;
+
+        .yo {
+            @include grid("img img img img" "p p p p", center, center, center, none);
+            height: 500px;
+
+            img {
+                width: 400px;
+                border-radius: 700px;
+                grid-area: img;
+            }
+
+            p {
+                font-family: 'Wix Madefor Display', sans-serif;
+                font-size: 20px;
+                grid-area: p;
+            }
+        }
+    }
+}

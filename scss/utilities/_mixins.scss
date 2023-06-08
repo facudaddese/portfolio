@@ -1,7 +1,7 @@
-@mixin flex($wrap, $ustify, $direction, $aling){
+@mixin flex($wrap, $justify, $direction, $aling){
     display: flex;
     flex-wrap: $wrap;
-    justify-content: $ustify;
+    justify-content: $justify;
     flex-direction: $direction;
     align-items: $aling;
 }

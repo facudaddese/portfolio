@@ -1,14 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 header {
-  background-color: #D5DBDB; }
+  background-color: #D5DBDB;
+  border-bottom: 1px solid #000000; }
   header nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-direction: none;
+    align-items: none; }
     header nav div {
       margin-left: 25px; }
       header nav div img {
@@ -16,6 +21,8 @@ header {
     header nav ul {
       display: flex;
       flex-wrap: wrap;
+      justify-content: none;
+      flex-direction: none;
       align-items: center;
       gap: 50px;
       margin-right: 25px; }
@@ -24,6 +31,27 @@ header {
         header nav ul li a {
           text-decoration: none;
           color: #000000;
-          font-size: 18px; }
+          font-size: 18px;
+          font-family: 'Righteous', cursive; }
           header nav ul li a:hover {
             text-decoration: underline; }
+
+main .description {
+  text-align: center;
+  background-color: #D5DBDB; }
+  main .description .yo {
+    display: grid;
+    grid-template-areas: "img img img img" "p p p p";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-gap: none;
+    height: 500px; }
+    main .description .yo img {
+      width: 400px;
+      border-radius: 700px;
+      grid-area: img; }
+    main .description .yo p {
+      font-family: 'Wix Madefor Display', sans-serif;
+      font-size: 20px;
+      grid-area: p; }
