@@ -41,7 +41,7 @@ main .description {
   text-align: center;
   background-color: #D5DBDB;
   display: grid;
-  grid-template-areas: "img img img img" "p p p p";
+  grid-template-areas: "img" "p";
   justify-content: center;
   align-items: center;
   justify-items: center;
@@ -63,16 +63,18 @@ main .sobre-mi {
   text-align: center;
   background-color: #E5E7E9;
   display: grid;
-  grid-template-areas: "h2 h2 h2 h2" "pp pp pp pp";
+  grid-template-areas: "h2" "pp";
   justify-content: center;
   align-items: center;
   justify-items: center;
-  grid-gap: none; }
+  grid-gap: 30px; }
   main .sobre-mi h2 {
-    font-size: 30px;
+    margin-top: 100px;
+    font-size: 35px;
     font-family: 'Cantarell', sans-serif;
     grid-area: h2; }
   main .sobre-mi p {
     font-family: 'Wix Madefor Display', sans-serif;
     font-size: 20px;
-    grid-area: pp; }
+    grid-area: pp;
+    margin-bottom: 100px; }
