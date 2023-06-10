@@ -61,60 +61,93 @@ main .description {
     padding: 10px;
     margin-top: 20px; }
 
-main section .sobre-mi {
+main section {
   text-align: center;
-  background-color: #E5E7E9;
-  display: grid;
-  grid-template-areas: "h2" "pp";
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  grid-gap: 30px; }
-  main section .sobre-mi h2 {
-    margin-top: 100px;
-    font-size: 35px;
-    font-family: 'Cantarell', sans-serif;
-    grid-area: h2; }
-  main section .sobre-mi p {
-    font-family: 'Wix Madefor Display', sans-serif;
-    font-size: 20px;
-    grid-area: pp;
-    margin-bottom: 100px; }
+  background-color: #E5E7E9; }
+  main section .sobre-mi {
+    display: grid;
+    grid-template-areas: "h2" "pp";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 30px; }
+    main section .sobre-mi h2 {
+      margin-top: 100px;
+      font-size: 35px;
+      font-family: 'Cantarell', sans-serif;
+      grid-area: h2; }
+    main section .sobre-mi p {
+      font-family: 'Wix Madefor Display', sans-serif;
+      font-size: 20px;
+      grid-area: pp;
+      margin-bottom: 100px; }
+  main section .conocimientos {
+    background-color: #E5E7E9;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px; }
+    main section .conocimientos h2 {
+      font-size: 35px;
+      font-family: 'Cantarell', sans-serif; }
+    main section .conocimientos .grid {
+      display: grid;
+      grid-template-areas: "html css js react angular sass git";
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      grid-gap: 50px; }
+      main section .conocimientos .grid div {
+        margin-bottom: 100px; }
+        main section .conocimientos .grid div img {
+          width: 70px; }
+        main section .conocimientos .grid div .html {
+          grid-area: html; }
+        main section .conocimientos .grid div .css {
+          grid-area: css; }
+        main section .conocimientos .grid div .js {
+          grid-area: js; }
+        main section .conocimientos .grid div .react {
+          grid-area: react; }
+        main section .conocimientos .grid div .angular {
+          grid-area: angular; }
+        main section .conocimientos .grid div .sass {
+          grid-area: sass; }
+        main section .conocimientos .grid div .git {
+          grid-area: git; }
 
-main section .conocimientos {
-  background-color: #E5E7E9;
+main .proyectos {
   text-align: center;
+  background-color: #D5DBDB;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 70px; }
-  main section .conocimientos h2 {
+  main .proyectos h2 {
     font-size: 35px;
-    font-family: 'Cantarell', sans-serif; }
-  main section .conocimientos .grid {
+    font-family: 'Cantarell', sans-serif;
+    margin-top: 100px; }
+  main .proyectos .proyectos-grid {
     display: grid;
-    grid-template-areas: "html css js react angular sass git";
+    grid-template-areas: "cr port";
     justify-content: center;
     align-items: center;
     justify-items: center;
-    grid-gap: 50px; }
-    main section .conocimientos .grid div {
-      margin-bottom: 100px; }
-      main section .conocimientos .grid div img {
-        width: 70px; }
-      main section .conocimientos .grid div .html {
-        grid-area: html; }
-      main section .conocimientos .grid div .css {
-        grid-area: css; }
-      main section .conocimientos .grid div .js {
-        grid-area: js; }
-      main section .conocimientos .grid div .react {
-        grid-area: react; }
-      main section .conocimientos .grid div .angular {
-        grid-area: angular; }
-      main section .conocimientos .grid div .sass {
-        grid-area: sass; }
-      main section .conocimientos .grid div .git {
-        grid-area: git; }
+    grid-gap: 50px;
+    margin-bottom: 100px; }
+    main .proyectos .proyectos-grid .cr {
+      grid-area: cr; }
+      main .proyectos .proyectos-grid .cr h3 {
+        font-size: 20px;
+        font-family: 'Cantarell', sans-serif; }
+      main .proyectos .proyectos-grid .cr .img-cr {
+        margin: 15px; }
+        main .proyectos .proyectos-grid .cr .img-cr img {
+          width: 500px; }
+    main .proyectos .proyectos-grid .portfolio {
+      grid-area: port; }

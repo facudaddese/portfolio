@@ -25,9 +25,10 @@ main {
     }
 
     section {
+        text-align: center;
+        background-color: $color3;
+
         .sobre-mi {
-            text-align: center;
-            background-color: $color3;
             @include grid("h2" "pp", center, center, center, 30px);
 
             h2 {
@@ -58,13 +59,13 @@ main {
 
             .grid {
                 @include grid("html css js react angular sass git", center, center, center, 50px);
-                
+
                 div {
                     margin-bottom: 100px;
 
                     img {
                         width: 70px;
-                        
+
                     }
 
                     .html {
@@ -96,6 +97,46 @@ main {
                     }
                 }
             }
+        }
+    }
+
+    .proyectos {
+        text-align: center;
+        background-color: $color;
+        @include flex (wrap, center, column, center);
+        gap: 70px;
+
+        h2 {
+            font-size: 35px;
+            font-family: 'Cantarell', sans-serif;
+            margin-top: 100px;
+        }
+
+        .proyectos-grid {
+            @include grid("cr port", center, center, center, 50px);
+            margin-bottom: 100px;
+
+            .cr {
+                grid-area: cr;
+
+                h3 {
+                    font-size: 20px;
+                    font-family: 'Cantarell', sans-serif;
+                }
+
+                .img-cr {   
+                    margin: 15px;
+                    
+                    img {
+                        width: 500px;
+                    }
+                }
+            }
+
+            .portfolio {
+                grid-area: port;
+            }
+
         }
     }
 }
