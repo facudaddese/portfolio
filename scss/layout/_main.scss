@@ -2,7 +2,7 @@ main {
     .description {
         text-align: center;
         background-color: $color;
-        @include grid("img" "p", center, center, center,none);
+        @include grid("img" "p", center, center, center, none);
 
         .yo {
 
@@ -24,23 +24,78 @@ main {
         }
     }
 
-    .sobre-mi {
-        text-align: center;
-        background-color: $color3;
-        @include grid("h2" "pp", center, center, center,30px);
+    section {
+        .sobre-mi {
+            text-align: center;
+            background-color: $color3;
+            @include grid("h2" "pp", center, center, center, 30px);
 
-        h2 {
-            margin-top: 100px;
-            font-size: 35px;
-            font-family: 'Cantarell', sans-serif;
-            grid-area: h2;
+            h2 {
+                margin-top: 100px;
+                font-size: 35px;
+                font-family: 'Cantarell', sans-serif;
+                grid-area: h2;
+            }
+
+            p {
+                font-family: 'Wix Madefor Display', sans-serif;
+                font-size: 20px;
+                grid-area: pp;
+                margin-bottom: 100px;
+            }
         }
 
-        p {
-            font-family: 'Wix Madefor Display', sans-serif;
-            font-size: 20px;
-            grid-area: pp;
-            margin-bottom: 100px;
+        .conocimientos {
+            background-color: $color3;
+            text-align: center;
+            @include flex (wrap, center, column, center);
+            gap: 70px;
+
+            h2 {
+                font-size: 35px;
+                font-family: 'Cantarell', sans-serif;
+            }
+
+            .grid {
+                @include grid("html css js react angular sass git", center, center, center, 50px);
+                
+                div {
+                    margin-bottom: 100px;
+
+                    img {
+                        width: 70px;
+                        
+                    }
+
+                    .html {
+                        grid-area: html;
+                    }
+
+                    .css {
+                        grid-area: css;
+                    }
+
+                    .js {
+                        grid-area: js;
+                    }
+
+                    .react {
+                        grid-area: react;
+                    }
+
+                    .angular {
+                        grid-area: angular;
+                    }
+
+                    .sass {
+                        grid-area: sass;
+                    }
+
+                    .git {
+                        grid-area: git;
+                    }
+                }
+            }
         }
     }
 }
