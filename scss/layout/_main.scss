@@ -112,30 +112,64 @@ main {
             margin-top: 100px;
         }
 
-        //seguir desde aca
         .proyectos-grid {
-            @include grid("cr port", center, center, center, 50px);
-            margin-bottom: 100px;
+            @include grid("div port", center, center, center, 70px);
+            margin-bottom: 120px;
 
-            .cr {
-                grid-area: cr;
+            .div-1 {
+                grid-area: div;
 
                 h3 {
                     font-size: 20px;
                     font-family: 'Cantarell', sans-serif;
                 }
 
-                .img-cr {   
-                    margin: 15px;
+                .img-1 {
+                    padding: 30px;
 
                     img {
-                        width: 500px;
+                        width: 400px;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    padding: 10px;
+                    font-family: 'Wix Madefor Display', sans-serif;
+                    color: $color2;
+
+                    &:hover {
+                        text-decoration: underline;
                     }
                 }
             }
 
             .portfolio {
                 grid-area: port;
+
+                h3 {
+                    font-size: 20px;
+                    font-family: 'Cantarell', sans-serif;
+                }
+
+                .img-2{
+                    padding: 30px;
+
+                    img{
+                        width: 400px
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    padding: 10px;
+                    font-family: 'Wix Madefor Display', sans-serif;
+                    color: $color2;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
 
         }

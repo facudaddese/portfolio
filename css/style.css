@@ -134,20 +134,41 @@ main .proyectos {
     margin-top: 100px; }
   main .proyectos .proyectos-grid {
     display: grid;
-    grid-template-areas: "cr port";
+    grid-template-areas: "div port";
     justify-content: center;
     align-items: center;
     justify-items: center;
-    grid-gap: 50px;
-    margin-bottom: 100px; }
-    main .proyectos .proyectos-grid .cr {
-      grid-area: cr; }
-      main .proyectos .proyectos-grid .cr h3 {
+    grid-gap: 70px;
+    margin-bottom: 120px; }
+    main .proyectos .proyectos-grid .div-1 {
+      grid-area: div; }
+      main .proyectos .proyectos-grid .div-1 h3 {
         font-size: 20px;
         font-family: 'Cantarell', sans-serif; }
-      main .proyectos .proyectos-grid .cr .img-cr {
-        margin: 15px; }
-        main .proyectos .proyectos-grid .cr .img-cr img {
-          width: 500px; }
+      main .proyectos .proyectos-grid .div-1 .img-1 {
+        padding: 30px; }
+        main .proyectos .proyectos-grid .div-1 .img-1 img {
+          width: 400px; }
+      main .proyectos .proyectos-grid .div-1 a {
+        text-decoration: none;
+        padding: 10px;
+        font-family: 'Wix Madefor Display', sans-serif;
+        color: #000000; }
+        main .proyectos .proyectos-grid .div-1 a:hover {
+          text-decoration: underline; }
     main .proyectos .proyectos-grid .portfolio {
       grid-area: port; }
+      main .proyectos .proyectos-grid .portfolio h3 {
+        font-size: 20px;
+        font-family: 'Cantarell', sans-serif; }
+      main .proyectos .proyectos-grid .portfolio .img-2 {
+        padding: 30px; }
+        main .proyectos .proyectos-grid .portfolio .img-2 img {
+          width: 400px; }
+      main .proyectos .proyectos-grid .portfolio a {
+        text-decoration: none;
+        padding: 10px;
+        font-family: 'Wix Madefor Display', sans-serif;
+        color: #000000; }
+        main .proyectos .proyectos-grid .portfolio a:hover {
+          text-decoration: underline; }
