@@ -1,0 +1,54 @@
+footer {
+    text-align: center;
+    background-color: $color3;
+    border-top: 1px solid $color2;
+
+    h3 {
+        margin: 100px;
+        line-height: 1;
+        letter-spacing: 2px;
+        font-size: 30px;
+        font-family: 'Cantarell', sans-serif;
+    }
+
+    .logos-footer {
+        @include grid("gh gm lk", center, center, center, 70px);
+
+        .github {
+            grid-area: gh;
+
+            a {
+
+                img {
+                    width: 50px;
+                }
+            }
+        }
+
+        .gmail {
+            grid-area: gm;
+
+            a {
+                img {
+                    width: 50px;
+                }
+            }
+        }
+
+        .linkedin {
+            grid-area: lk;
+
+            a {
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    p {
+        padding: 100px;
+        font-family: 'Wix Madefor Display', sans-serif;
+        font-size: 15px;
+    }
+}

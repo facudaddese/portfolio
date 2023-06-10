@@ -172,3 +172,37 @@ main .proyectos {
         color: #000000; }
         main .proyectos .proyectos-grid .portfolio a:hover {
           text-decoration: underline; }
+
+footer {
+  text-align: center;
+  background-color: #E5E7E9;
+  border-top: 1px solid #000000; }
+  footer h3 {
+    margin: 100px;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: 'Cantarell', sans-serif; }
+  footer .logos-footer {
+    display: grid;
+    grid-template-areas: "gh gm lk";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 70px; }
+    footer .logos-footer .github {
+      grid-area: gh; }
+      footer .logos-footer .github a img {
+        width: 50px; }
+    footer .logos-footer .gmail {
+      grid-area: gm; }
+      footer .logos-footer .gmail a img {
+        width: 50px; }
+    footer .logos-footer .linkedin {
+      grid-area: lk; }
+      footer .logos-footer .linkedin a img {
+        width: 50px; }
+  footer p {
+    padding: 100px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 15px; }
