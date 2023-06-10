@@ -112,6 +112,7 @@ main {
             margin-top: 100px;
         }
 
+        //seguir desde aca
         .proyectos-grid {
             @include grid("cr port", center, center, center, 50px);
             margin-bottom: 100px;
@@ -126,7 +127,7 @@ main {
 
                 .img-cr {   
                     margin: 15px;
-                    
+
                     img {
                         width: 500px;
                     }
