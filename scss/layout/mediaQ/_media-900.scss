@@ -1,8 +1,5 @@
 @media (max-width: 900px) {
 
-    /*-----------------*/
-    /*----- MAIN -----*/
-    /*---------------*/
     main {
         section {
 
@@ -11,6 +8,7 @@
                 p {
                     padding: 25px;
                     width: 800px;
+                    padding: 0;
                 }
             }
 
@@ -24,6 +22,6 @@
             .proyectos-grid{
                 @include grid("div div" "port port", center, center, center, 70px);
             }
-        }//seguir desde aca
+        }
     }
 }

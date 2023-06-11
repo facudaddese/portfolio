@@ -212,12 +212,10 @@ footer {
     font-size: 15px; }
 
 @media (max-width: 900px) {
-  /*-----------------*/
-  /*----- MAIN -----*/
-  /*---------------*/
   main section .sobre-mi p {
     padding: 25px;
-    width: 800px; }
+    width: 800px;
+    padding: 0; }
   main section .conocimientos {
     display: grid;
     grid-template-areas: "h2 h2" "html css" "sass git" "js react" "angular angular";
@@ -242,3 +240,67 @@ footer {
 @media (max-width: 600px) {
   main section .sobre-mi p {
     width: 500px; } }
+
+@media (max-width: 426px) {
+  /*-------*/
+  /*HEADER*/
+  /*-----*/
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    header nav div {
+      margin: 0; }
+      header nav div img {
+        width: 90px; }
+    header nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: none;
+      align-items: center;
+      margin: 0;
+      padding: 10px; }
+      header nav ul li a {
+        font-size: 16px; }
+  /*===============================================*/
+  /*-----*/
+  /*MAIN*/
+  /*---*/
+  main .description .yo img {
+    width: 300px; }
+  main .description .yo p {
+    font-size: 18px; }
+  main section .sobre-mi h2 {
+    font-size: 30px; }
+  main section .sobre-mi p {
+    width: 400px; }
+  main section .conocimientos {
+    display: grid;
+    grid-template-areas: "h2" "html" "css" "sass" "git" "js" "react" "angular";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 50px; }
+    main section .conocimientos h2 {
+      font-size: 30px; }
+  main .proyectos h2 {
+    font-size: 30px; }
+  main .proyectos .proyectos-grid .div-1 h3 {
+    font-size: 17px; }
+  main .proyectos .proyectos-grid .div-1 .img-1 img {
+    width: 350px; }
+  main .proyectos .proyectos-grid .portfolio h3 {
+    font-size: 17px; }
+  main .proyectos .proyectos-grid .portfolio .img-2 img {
+    width: 350px; }
+  /*===============================================*/
+  /*-------*/
+  /*FOOTER*/
+  /*-----*/
+  footer h3 {
+    font-size: 25px; }
+  footer p {
+    font-size: 13px; } }
