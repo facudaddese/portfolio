@@ -238,3 +238,7 @@ footer {
     width: 350px; }
   main section .sobre-mi p {
     width: 700px; } }
+
+@media (max-width: 600px) {
+  main section .sobre-mi p {
+    width: 500px; } }
