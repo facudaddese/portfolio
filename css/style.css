@@ -232,3 +232,9 @@ footer {
     align-items: center;
     justify-items: center;
     grid-gap: 70px; } }
+
+@media (max-width: 768px) {
+  main .description .yo img {
+    width: 350px; }
+  main section .sobre-mi p {
+    width: 700px; } }
