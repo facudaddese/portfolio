@@ -13,14 +13,6 @@
                 }
             }
 
-            .conocimientos {
-                border: 1px solid red;
-
-                .grid {
-                    @include grid("html css js" "react angular" "sass git", "center", "center", "center", 50px);
-
-                }
-            }
         }
     }
 }

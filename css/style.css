@@ -212,13 +212,4 @@ footer {
   /*----- MAIN -----*/
   /*---------------*/
   main section .sobre-mi p {
-    padding: 10px; }
-  main section .conocimientos {
-    border: 1px solid red; }
-    main section .conocimientos .grid {
-      display: grid;
-      grid-template-areas: "html css js" "react angular" "sass git";
-      justify-content: "center";
-      align-items: "center";
-      justify-items: "center";
-      grid-gap: 50px; } }
+    padding: 10px; } }
