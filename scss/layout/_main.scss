@@ -27,6 +27,7 @@ main {
         background-color: $color3;
 
         .sobre-mi {
+            text-align: center;
             @include grid("h2" "pp", center, center, center, 30px);
 
             h2 {
@@ -46,10 +47,8 @@ main {
 
         .conocimientos {
             background-color: $color3;
-            text-align: center;
-            @include flex (wrap, center, column, center);
-            @include grid("h2 h2 h2 h2 h2 h2 h2" "html" "css" "js" "react" "angular" "sass" "git", center, center, center, 50px);
-            gap: 70px;
+            padding-bottom: 100px; 
+            @include grid("h2 h2 h2 h2 h2 h2 h2" "html css sass git js react angular", center, center, center, 50px);
 
             h2 {
                 font-size: 35px;
@@ -57,114 +56,140 @@ main {
                 grid-area: h2;
             }
 
-            div {
-                margin-bottom: 100px;
+            .section-html {
+                grid-area: html;
 
                 img {
                     width: 70px;
 
                 }
+            }
 
-                .html {
-                    grid-area: html;
+            .section-css {
+                grid-area: css;
+
+                img {
+                    width: 70px;
+
                 }
+            }
 
-                .css {
-                    grid-area: css;
+            .section-sass {
+                grid-area: sass;
+
+                img {
+                    width: 70px;
+
                 }
+            }
 
-                .js {
-                    grid-area: js;
+            .section-git {
+                grid-area: git;
+
+                img {
+                    width: 70px;
+
                 }
+            }
 
-                .react {
-                    grid-area: react;
+            .section-js {
+                grid-area: js;
+
+                img {
+                    width: 70px;
+
                 }
+            }
 
-                .angular {
-                    grid-area: angular;
+            .section-react {
+                grid-area: react;
+
+                img {
+                    width: 70px;
+
                 }
+            }
 
-                .sass {
-                    grid-area: sass;
-                }
+            .section-angular {
+                grid-area: angular;
 
-                .git {
-                    grid-area: git;
+                img {
+                    width: 70px;
+
                 }
             }
         }
     }
-}
 
-.proyectos {
-    text-align: center;
-    background-color: $color;
-    @include flex (wrap, center, column, center);
-    gap: 70px;
+    .proyectos {
+        text-align: center;
+        background-color: $color;
+        @include flex (wrap, center, column, center);
+        gap: 70px;
 
-    h2 {
-        font-size: 35px;
-        font-family: 'Cantarell', sans-serif;
-        margin-top: 100px;
-    }
-
-    .proyectos-grid {
-        @include grid("div port", center, center, center, 70px);
-        margin-bottom: 120px;
-
-        .div-1 {
-            grid-area: div;
-
-            h3 {
-                font-size: 20px;
-                font-family: 'Cantarell', sans-serif;
-            }
-
-            .img-1 {
-                padding: 30px;
-
-                img {
-                    width: 400px;
-                }
-            }
-
-            a {
-                text-decoration: none;
-                padding: 10px;
-                font-family: 'Wix Madefor Display', sans-serif;
-                color: $color2;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
+        h2 {
+            font-size: 35px;
+            font-family: 'Cantarell', sans-serif;
+            margin-top: 100px;
         }
 
-        .portfolio {
-            grid-area: port;
+        .proyectos-grid {
+            @include grid("div port", center, center, center, 70px);
+            margin-bottom: 120px;
 
-            h3 {
-                font-size: 20px;
-                font-family: 'Cantarell', sans-serif;
-            }
+            .div-1 {
+                grid-area: div;
 
-            .img-2 {
-                padding: 30px;
+                h3 {
+                    font-size: 20px;
+                    font-family: 'Cantarell', sans-serif;
+                }
 
-                img {
-                    width: 400px
+                .img-1 {
+                    padding: 30px;
+
+                    img {
+                        width: 400px;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    padding: 10px;
+                    font-family: 'Wix Madefor Display', sans-serif;
+                    color: $color2;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
 
-            a {
-                text-decoration: none;
-                padding: 10px;
-                font-family: 'Wix Madefor Display', sans-serif;
-                color: $color2;
+            .portfolio {
+                grid-area: port;
 
-                &:hover {
-                    text-decoration: underline;
+                h3 {
+                    font-size: 20px;
+                    font-family: 'Cantarell', sans-serif;
+                }
+
+                .img-2 {
+                    padding: 30px;
+
+                    img {
+                        width: 400px
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    padding: 10px;
+                    font-family: 'Wix Madefor Display', sans-serif;
+                    color: $color2;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }

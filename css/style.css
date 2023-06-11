@@ -40,7 +40,6 @@ header {
             color: #ffffff; }
 
 main .description {
-  text-align: center;
   background-color: #D5DBDB;
   display: grid;
   grid-template-areas: "img" "p";
@@ -62,9 +61,9 @@ main .description {
     margin-top: 20px; }
 
 main section {
-  text-align: center;
   background-color: #E5E7E9; }
   main section .sobre-mi {
+    text-align: center;
     display: grid;
     grid-template-areas: "h2" "pp";
     justify-content: center;
@@ -83,41 +82,45 @@ main section {
       margin-bottom: 100px; }
   main section .conocimientos {
     background-color: #E5E7E9;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-areas: "h2 h2 h2 h2 h2 h2 h2" "html css sass git js react angular";
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    gap: 70px; }
+    justify-items: center;
+    grid-gap: 50px; }
     main section .conocimientos h2 {
       font-size: 35px;
-      font-family: 'Cantarell', sans-serif; }
-    main section .conocimientos .grid {
-      display: grid;
-      grid-template-areas: "html css js react angular sass git";
-      justify-content: center;
-      align-items: center;
-      justify-items: center;
-      grid-gap: 50px; }
-      main section .conocimientos .grid div {
-        margin-bottom: 100px; }
-        main section .conocimientos .grid div img {
-          width: 70px; }
-        main section .conocimientos .grid div .html {
-          grid-area: html; }
-        main section .conocimientos .grid div .css {
-          grid-area: css; }
-        main section .conocimientos .grid div .js {
-          grid-area: js; }
-        main section .conocimientos .grid div .react {
-          grid-area: react; }
-        main section .conocimientos .grid div .angular {
-          grid-area: angular; }
-        main section .conocimientos .grid div .sass {
-          grid-area: sass; }
-        main section .conocimientos .grid div .git {
-          grid-area: git; }
+      font-family: 'Cantarell', sans-serif;
+      grid-area: h2; }
+    main section .conocimientos .section-html {
+      grid-area: html; }
+      main section .conocimientos .section-html img {
+        width: 70px; }
+    main section .conocimientos .section-css {
+      grid-area: css; }
+      main section .conocimientos .section-css img {
+        width: 70px; }
+    main section .conocimientos .section-sass {
+      grid-area: sass; }
+      main section .conocimientos .section-sass img {
+        width: 70px; }
+    main section .conocimientos .section-git {
+      grid-area: git; }
+      main section .conocimientos .section-git img {
+        width: 70px; }
+    main section .conocimientos .section-js {
+      grid-area: js; }
+      main section .conocimientos .section-js img {
+        width: 70px; }
+    main section .conocimientos .section-react {
+      grid-area: react; }
+      main section .conocimientos .section-react img {
+        width: 70px; }
+    main section .conocimientos .section-angular {
+      grid-area: angular; }
+      main section .conocimientos .section-angular img {
+        width: 70px; }
 
 main .proyectos {
   text-align: center;
@@ -212,13 +215,18 @@ footer {
   /*----- MAIN -----*/
   /*---------------*/
   main section .sobre-mi p {
-    padding: 10px; }
-  main section .conocimientos h2 {
-    color: aqua; }
-  main section .conocimientos .grid {
+    padding: 25px; }
+  main section .conocimientos {
     display: grid;
-    grid-template-areas: "html" "css" "js" "react" "angular" "sass" "git";
+    grid-template-areas: "h2 h2" "html css" "sass git" "js react" "angular angular";
     justify-content: center;
-    align-items: none;
+    align-items: center;
     justify-items: center;
-    grid-gap: none; } }
+    grid-gap: 50px; }
+  main .proyectos .proyectos-grid {
+    display: grid;
+    grid-template-areas: "div div" "port port";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 70px; } }

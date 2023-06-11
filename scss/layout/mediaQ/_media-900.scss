@@ -9,75 +9,20 @@
             .sobre-mi {
 
                 p {
-                    padding: 10px;
+                    padding: 25px;
                 }
             }
 
             .conocimientos {
-                .grid {
-                    @include grid("html" "css" "js" "react" "angular" "sass" "git", center, none, center, none);
+                @include grid("h2 h2" "html css" "sass git" "js react" "angular angular", center, center, center, 50px);
 
-                    h2 {
-                        color: aqua;
-                    }
-                }
             }
         }
 
+        .proyectos{
+            .proyectos-grid{
+                @include grid("div div" "port port", center, center, center, 70px);
+            }
+        }
     }
 }
-
-/*
-<footer>
-        <section class="footer-grid">
-            <h3>Algunas marcas asociadas</h3>
-
-            <!-- logo nike -->
-            <section class="nike-grid">
-                <img src="https://i.postimg.cc/85PfjGt5/logo-nike.png" alt="logo de nike" class="nike">
-            </section>
-
-            <!-- logo clear -->
-            <section class="clear-grid">
-                <img src="https://i.postimg.cc/D0NX9NQz/logo-clear.png" alt="logo de clear" class="clear">
-            </section>
-
-            <!-- logo jacobyco -->
-            <section class="jyco-grid">
-                <img src="https://i.postimg.cc/t4Wxc2sX/logo-jacobyco.jpg" alt="logo de jacobyco & CR7" class="jyco">
-            </section>
-
-            <!-- logo free fire -->
-            <section class="free-grid">
-                <img src="https://i.postimg.cc/qgf7XHX2/logo-freefire.jpg" alt="logo de free fire" class="free">
-            </section>
-
-            <!-- logo pestana -->
-            <section class="pestana-grid">
-                <img src="https://i.postimg.cc/W4VkcgZ0/logo-pestana.jpg" alt="logo de pestana CR7, hotel de Cristiano"
-                    class="pestana">
-            </section>
-
-            <!-- logo fitnes -->
-            <section class="fit-grid">
-                <img src="https://i.postimg.cc/bJ3bTrsk/logo-cr7-fitnes.jpg" alt="logo de CR7 fitnes" class="fitnes">
-            </section>
-
-            <!-- logo herbalife -->
-            <section class="herba-grid">
-                <img src="https://i.postimg.cc/MHncmDkJ/logo-herbalife.jpg" alt="logo de herbalife" class="herbalife">
-            </section>
-
-            <!-- logo binance -->
-            <section class="bin-grid">
-                <img src="https://i.postimg.cc/WzzZfVkK/logo-binance.webp" alt="logo de binance" class="binance">
-            </section>
-
-            <!-- logo live -->
-            <section class="live-grid">
-                <img src="https://i.postimg.cc/k5ytJGNz/logo-live.jpg" alt="logo de live score" class="live">
-            </section>
-
-            <p>&copyCristiano Ronaldo, todos los derechos reservados</p>
-        </section>
-    </footer>*/
