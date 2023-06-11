@@ -212,4 +212,13 @@ footer {
   /*----- MAIN -----*/
   /*---------------*/
   main section .sobre-mi p {
-    padding: 10px; } }
+    padding: 10px; }
+  main section .conocimientos h2 {
+    color: aqua; }
+  main section .conocimientos .grid {
+    display: grid;
+    grid-template-areas: "html" "css" "js" "react" "angular" "sass" "git";
+    justify-content: center;
+    align-items: none;
+    justify-items: center;
+    grid-gap: none; } }
