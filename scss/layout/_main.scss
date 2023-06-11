@@ -16,9 +16,8 @@ main {
                 font-family: 'Wix Madefor Display', sans-serif;
                 font-size: 20px;
                 grid-area: p;
-                margin-bottom: 120px;
-                padding: 10px;
-                margin-top: 20px;
+                margin: 20px 0 120px 0;
+                text-align: center;
             }
         }
     }
@@ -28,7 +27,7 @@ main {
 
         .sobre-mi {
             text-align: center;
-            @include grid("h2" "pp", center, center, center, 30px);
+            @include grid("h2" "pp", center, center, center, 35px);
 
             h2 {
                 margin-top: 100px;
@@ -42,12 +41,13 @@ main {
                 font-size: 20px;
                 grid-area: pp;
                 margin-bottom: 100px;
+                width: 1000px;
             }
         }
 
         .conocimientos {
             background-color: $color3;
-            padding-bottom: 100px; 
+            padding-bottom: 100px;
             @include grid("h2 h2 h2 h2 h2 h2 h2" "html css sass git js react angular", center, center, center, 50px);
 
             h2 {
@@ -61,7 +61,6 @@ main {
 
                 img {
                     width: 70px;
-
                 }
             }
 
@@ -70,7 +69,6 @@ main {
 
                 img {
                     width: 70px;
-
                 }
             }
 
@@ -79,7 +77,6 @@ main {
 
                 img {
                     width: 70px;
-
                 }
             }
 
@@ -88,7 +85,6 @@ main {
 
                 img {
                     width: 70px;
-
                 }
             }
 
@@ -97,7 +93,6 @@ main {
 
                 img {
                     width: 70px;
-
                 }
             }
 
@@ -106,7 +101,6 @@ main {
 
                 img {
                     width: 70px;
-
                 }
             }
 
@@ -115,7 +109,6 @@ main {
 
                 img {
                     width: 70px;
-
                 }
             }
         }
@@ -177,7 +170,8 @@ main {
                     padding: 30px;
 
                     img {
-                        width: 400px
+                        width: 400px;
+                        height: 225px;
                     }
                 }
 
