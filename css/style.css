@@ -210,7 +210,7 @@ footer {
     font-family: 'Wix Madefor Display', sans-serif;
     font-size: 15px; }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   /*-----------------*/
   /*----- MAIN -----*/
   /*---------------*/
