@@ -1,0 +1,26 @@
+@media (max-width: 900px) {
+
+    /*-----------------*/
+    /*----- MAIN -----*/
+    /*---------------*/
+    main {
+        section {
+
+            .sobre-mi {
+
+                p {
+                    padding: 10px;
+                }
+            }
+
+            .conocimientos {
+                border: 1px solid red;
+
+                .grid {
+                    @include grid("html css js" "react angular" "sass git", "center", "center", "center", 50px);
+
+                }
+            }
+        }
+    }
+}
