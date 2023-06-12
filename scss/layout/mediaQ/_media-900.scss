@@ -1,6 +1,17 @@
 @media (max-width: 900px) {
 
     main {
+
+        .description {
+
+            .yo {
+
+                img {
+                    padding: 5px;
+                }
+            }
+        }
+
         section {
 
             .sobre-mi {
@@ -18,8 +29,8 @@
             }
         }
 
-        .proyectos{
-            .proyectos-grid{
+        .proyectos {
+            .proyectos-grid {
                 @include grid("div div" "port port", center, center, center, 70px);
             }
         }

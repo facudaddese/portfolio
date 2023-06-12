@@ -1,1 +1,87 @@
-//retomar desde aca
+@media (max-width: 375px) {
+
+    main {
+
+        .description {
+
+            .yo {
+
+                img {
+                    width: 250px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        section {
+
+            .sobre-mi {
+
+                h2 {
+                    font-size: 27px;
+                }
+
+                p {
+                    width: 350px;
+                }
+            }
+
+            .conocimientos {
+
+                h2 {
+                    font-size: 27px;
+                }
+            }
+        }
+
+        .proyectos {
+
+            h2 {
+                font-size: 27px;
+            }
+
+            .proyectos-grid {
+
+                .div-1 {
+
+                    .img-1 {
+
+                        img {
+                            width: 300px;
+                        }
+                    }
+                }
+
+                .portfolio {
+
+                    .img-2 {
+                        img {
+                            width: 300px;
+                            height: 169px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*=================================*/
+
+    /*-------*/
+    /*FOOTER*/
+    /*-----*/
+
+    footer {
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .logos-footer {
+            @include grid("gh" "gm" "lk", center, center, center, 70px);
+        }
+    }
+}

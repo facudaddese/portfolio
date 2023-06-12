@@ -47,17 +47,19 @@ main .description {
   align-items: center;
   justify-items: center;
   grid-gap: none; }
-  main .description .yo img {
-    margin-top: 130px;
-    width: 400px;
-    border-radius: 700px;
-    grid-area: img; }
-  main .description .yo p {
-    font-family: 'Wix Madefor Display', sans-serif;
-    font-size: 20px;
-    grid-area: p;
-    margin: 20px 0 120px 0;
+  main .description .yo {
     text-align: center; }
+    main .description .yo img {
+      margin-top: 130px;
+      width: 400px;
+      border-radius: 700px;
+      grid-area: img; }
+    main .description .yo p {
+      font-family: 'Wix Madefor Display', sans-serif;
+      font-size: 20px;
+      grid-area: p;
+      margin: 20px 0 120px 0;
+      text-align: center; }
 
 main section {
   background-color: #E5E7E9; }
@@ -212,6 +214,8 @@ footer {
     font-size: 15px; }
 
 @media (max-width: 900px) {
+  main .description .yo img {
+    padding: 5px; }
   main section .sobre-mi p {
     padding: 25px;
     width: 800px;
@@ -234,6 +238,8 @@ footer {
 @media (max-width: 768px) {
   main .description .yo img {
     width: 350px; }
+  main .description .yo p {
+    padding: 5px; }
   main section .sobre-mi p {
     width: 700px; } }
 
@@ -265,10 +271,12 @@ footer {
   /*-----*/
   /*MAIN*/
   /*---*/
-  main .description .yo img {
-    width: 300px; }
-  main .description .yo p {
-    font-size: 18px; }
+  main .description .yo {
+    text-align: center; }
+    main .description .yo img {
+      width: 300px; }
+    main .description .yo p {
+      font-size: 18px; }
   main section .sobre-mi h2 {
     font-size: 30px; }
   main section .sobre-mi p {
@@ -291,7 +299,8 @@ footer {
   main .proyectos .proyectos-grid .portfolio h3 {
     font-size: 17px; }
   main .proyectos .proyectos-grid .portfolio .img-2 img {
-    width: 350px; }
+    width: 350px;
+    height: 197px; }
   /*===============================================*/
   /*-------*/
   /*FOOTER*/
@@ -304,3 +313,35 @@ footer {
 @media (max-width: 700px) {
   main section .sobre-mi p {
     width: 400px; } }
+
+@media (max-width: 375px) {
+  main .description .yo img {
+    width: 250px; }
+  main .description .yo p {
+    font-size: 15px; }
+  main section .sobre-mi h2 {
+    font-size: 27px; }
+  main section .sobre-mi p {
+    width: 350px; }
+  main section .conocimientos h2 {
+    font-size: 27px; }
+  main .proyectos h2 {
+    font-size: 27px; }
+  main .proyectos .proyectos-grid .div-1 .img-1 img {
+    width: 300px; }
+  main .proyectos .proyectos-grid .portfolio .img-2 img {
+    width: 300px;
+    height: 169px; }
+  /*=================================*/
+  /*-------*/
+  /*FOOTER*/
+  /*-----*/
+  footer h3 {
+    font-size: 20px; }
+  footer .logos-footer {
+    display: grid;
+    grid-template-areas: "gh" "gm" "lk";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 70px; } }

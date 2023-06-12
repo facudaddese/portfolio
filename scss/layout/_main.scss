@@ -4,6 +4,7 @@ main {
         @include grid("img" "p", center, center, center, none);
 
         .yo {
+            text-align: center;
 
             img {
                 margin-top: 130px;
