@@ -243,6 +243,10 @@ footer {
   main section .sobre-mi p {
     width: 700px; } }
 
+@media (max-width: 700px) {
+  main section .sobre-mi p {
+    width: 400px; } }
+
 @media (max-width: 600px) {
   /*-------*/
   /*HEADER*/
@@ -310,11 +314,7 @@ footer {
   footer p {
     font-size: 13px; } }
 
-@media (max-width: 700px) {
-  main section .sobre-mi p {
-    width: 400px; } }
-
-@media (max-width: 400px) {
+@media (max-width: 375px) {
   main .description .yo img {
     width: 250px; }
   main .description .yo p {
