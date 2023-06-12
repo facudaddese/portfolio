@@ -40,13 +40,13 @@ header {
             color: #ffffff; }
 
 main .description {
-  background-color: #D5DBDB;
   display: grid;
   grid-template-areas: "img" "p";
   justify-content: center;
   align-items: center;
   justify-items: center;
-  grid-gap: none; }
+  grid-gap: none;
+  background-color: #D5DBDB; }
   main .description .yo {
     text-align: center; }
     main .description .yo img {

@@ -1,7 +1,7 @@
 main {
     .description {
-        background-color: $color;
         @include grid("img" "p", center, center, center, none);
+        background-color: $color;
 
         .yo {
             text-align: center;
