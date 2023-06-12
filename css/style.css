@@ -345,3 +345,70 @@ footer {
     align-items: center;
     justify-items: center;
     grid-gap: 70px; } }
+
+@media (max-width: 320px) {
+  /*-------*/
+  /*HEADER*/
+  /*-----*/
+  header nav div img {
+    width: 80px; }
+  header nav ul li a {
+    font-size: 13px; }
+  /*================================*/
+  /*-----*/
+  /*MAIN*/
+  /*---*/
+  main .description .yo img {
+    width: 200px; }
+  main .description .yo p {
+    font-size: 13px; }
+  main section .sobre-mi h2 {
+    font-size: 24px; }
+  main section .sobre-mi p {
+    width: 300px;
+    font-size: 18px; }
+  main section .conocimientos h2 {
+    font-size: 24px; }
+  main section .conocimientos .section-html img {
+    width: 60px; }
+  main section .conocimientos .section-css img {
+    width: 60px; }
+  main section .conocimientos .section-sass img {
+    width: 60px; }
+  main section .conocimientos .section-git img {
+    width: 60px; }
+  main section .conocimientos .section-js img {
+    width: 60px; }
+  main section .conocimientos .section-react img {
+    width: 60px; }
+  main section .conocimientos .section-angular img {
+    width: 60px; }
+  main .proyectos h2 {
+    font-size: 24px; }
+  main .proyectos .proyectos-grid .div-1 h3 {
+    font-size: 15px; }
+  main .proyectos .proyectos-grid .div-1 .img-1 img {
+    width: 250px; }
+  main .proyectos .proyectos-grid .div-1 a {
+    font-size: 13px; }
+  main .proyectos .proyectos-grid .portfolio h3 {
+    font-size: 15px; }
+  main .proyectos .proyectos-grid .portfolio .img-2 img {
+    width: 250px;
+    height: 140px; }
+  main .proyectos .proyectos-grid .portfolio a {
+    font-size: 13px; }
+  /*================================*/
+  /*-------*/
+  /*FOOTER*/
+  /*-----*/
+  footer h3 {
+    font-size: 15px; }
+  footer .logos-footer .github a img {
+    width: 40px; }
+  footer .logos-footer .gmail a img {
+    width: 40px; }
+  footer .logos-footer .linkedin a img {
+    width: 40px; }
+  footer p {
+    font-size: 11px; } }

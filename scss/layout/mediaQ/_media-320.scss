@@ -1,0 +1,220 @@
+@media (max-width: 320px) {
+
+    /*-------*/
+    /*HEADER*/
+    /*-----*/
+
+    header {
+
+        nav {
+
+            div {
+
+                img {
+                    width: 80px;
+                }
+            }
+
+            ul {
+
+                li {
+
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*================================*/
+
+    /*-----*/
+    /*MAIN*/
+    /*---*/
+
+    main {
+
+        .description {
+
+            .yo {
+
+                img {
+                    width: 200px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        section {
+
+            .sobre-mi {
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    width: 300px;
+                    font-size: 18px;
+                }
+            }
+
+            .conocimientos {
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                .section-html {
+
+                    img {
+                        width: 60px;
+                    }
+                }
+
+                .section-css {
+
+                    img {
+                        width: 60px;
+                    }
+                }
+
+                .section-sass {
+
+                    img {
+                        width: 60px;
+                    }
+                }
+
+                .section-git {
+
+                    img {
+                        width: 60px;
+                    }
+                }
+
+                .section-js {
+
+                    img {
+                        width: 60px;
+                    }
+                }
+
+                .section-react {
+
+                    img {
+                        width: 60px;
+                    }
+                }
+
+                .section-angular {
+
+                    img {
+                        width: 60px;
+                    }
+                }
+            }
+        }
+
+        .proyectos {
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .proyectos-grid {
+
+                .div-1 {
+
+                    h3 {
+                        font-size: 15px;
+                    }
+
+                    .img-1 {
+
+                        img {
+                            width: 250px;
+                        }
+                    }
+
+                    a {
+                        font-size: 13px;
+                    }
+                }
+
+                .portfolio {
+
+                    h3 {
+                        font-size: 15px;
+                    }
+
+                    .img-2 {
+
+                        img {
+                            width: 250px;
+                            height: 140px;
+                        }
+                    }
+
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*================================*/
+
+    /*-------*/
+    /*FOOTER*/
+    /*-----*/
+
+    footer {
+
+        h3 {
+            font-size: 15px;
+        }
+
+        .logos-footer {
+
+            .github {
+
+                a {
+
+                    img {
+                        width: 40px;
+                    }
+                }
+            }
+
+            .gmail {
+
+                a {
+
+                    img {
+                        width: 40px;
+                    }
+                }
+            }
+
+            .linkedin {
+
+                a {
+
+                    img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 11px;
+        }
+    }
+}
