@@ -300,3 +300,7 @@ footer {
     font-size: 25px; }
   footer p {
     font-size: 13px; } }
+
+@media (max-width: 700px) {
+  main section .sobre-mi p {
+    width: 400px; } }
