@@ -30,6 +30,7 @@
             }
 
             .conocimientos {
+                @include grid("h2" "html" "css" "sass" "git" "js" "react" "angular", center, center, center, 50px);
 
                 h2 {
                     font-size: 27px;
