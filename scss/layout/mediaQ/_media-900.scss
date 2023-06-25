@@ -30,6 +30,7 @@
         }
 
         .proyectos {
+
             .proyectos-grid {
                 @include grid("div div" "port port", center, center, center, 70px);
             }
