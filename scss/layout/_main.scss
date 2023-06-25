@@ -1,4 +1,5 @@
 main {
+    
     .description {
         @include grid("img" "p", center, center, center, none);
         background-color: $color;
@@ -128,7 +129,7 @@ main {
         }
 
         .proyectos-grid {
-            @include grid("div port", center, center, center, 70px);
+            @include grid("div port" "quiz .", center, center, center, 70px);
             margin-bottom: 120px;
 
             .cr {
@@ -172,6 +173,35 @@ main {
 
                     img {
                         width: 400px;
+                        height: 225px;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    padding: 10px;
+                    font-family: 'Wix Madefor Display', sans-serif;
+                    color: $color2;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .trivia {
+                grid-area: quiz;
+
+                h3 {
+                    font-size: 20px;
+                    font-family: 'Cantarell', sans-serif;
+                }
+
+                .img-3 {
+                    padding: 30px;
+
+                    img {
+                        width: 250px;
                         height: 225px;
                     }
                 }

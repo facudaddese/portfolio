@@ -1,4 +1,4 @@
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
 
     main {
 
@@ -33,27 +33,6 @@
 
             .proyectos-grid {
                 @include grid("div port" "quiz .", center, center, center, 70px);
-
-                .cr {
-
-                    .img-1 {
-
-                        img {
-                            width: 320px;
-                        }
-                    }
-                }
-
-                .portfolio {
-
-                    .img-2 {
-
-                        img {
-                            width: 320px;
-                            height: 180px;
-                        }
-                    }
-                }
             }
         }
     }

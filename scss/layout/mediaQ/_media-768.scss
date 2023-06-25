@@ -1,6 +1,7 @@
 @media (max-width: 768px) {
 
     main {
+
         .description {
 
             .yo {
@@ -21,6 +22,33 @@
 
                 p {
                     width: 700px;
+                }
+            }
+        }
+
+        .proyectos {
+
+            .proyectos-grid {
+
+                .cr {
+
+                    .img-1 {
+
+                        img {
+                            width: 293px;
+                        }
+                    }
+                }
+
+                .portfolio {
+
+                    .img-2 {
+
+                        img {
+                            width: 293px;
+                            height: 165px;
+                        }
+                    }
                 }
             }
         }

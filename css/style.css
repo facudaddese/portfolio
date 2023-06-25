@@ -139,7 +139,7 @@ main .proyectos {
     margin-top: 100px; }
   main .proyectos .proyectos-grid {
     display: grid;
-    grid-template-areas: "div port";
+    grid-template-areas: "div port" "quiz .";
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -178,6 +178,23 @@ main .proyectos {
         color: #000000; }
         main .proyectos .proyectos-grid .portfolio a:hover {
           text-decoration: underline; }
+    main .proyectos .proyectos-grid .trivia {
+      grid-area: quiz; }
+      main .proyectos .proyectos-grid .trivia h3 {
+        font-size: 20px;
+        font-family: 'Cantarell', sans-serif; }
+      main .proyectos .proyectos-grid .trivia .img-3 {
+        padding: 30px; }
+        main .proyectos .proyectos-grid .trivia .img-3 img {
+          width: 250px;
+          height: 225px; }
+      main .proyectos .proyectos-grid .trivia a {
+        text-decoration: none;
+        padding: 10px;
+        font-family: 'Wix Madefor Display', sans-serif;
+        color: #000000; }
+        main .proyectos .proyectos-grid .trivia a:hover {
+          text-decoration: underline; }
 
 footer {
   text-align: center;
@@ -213,6 +230,28 @@ footer {
     font-family: 'Wix Madefor Display', sans-serif;
     font-size: 15px; }
 
+@media (max-width: 1024px) {
+  main .description .yo img {
+    padding: 5px; }
+  main section .sobre-mi p {
+    padding: 25px;
+    width: 800px;
+    padding: 0; }
+  main section .conocimientos {
+    display: grid;
+    grid-template-areas: "h2 h2" "html css" "sass git" "js react" "angular angular";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 50px; }
+  main .proyectos .proyectos-grid {
+    display: grid;
+    grid-template-areas: "div port" "quiz .";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 70px; } }
+
 @media (max-width: 900px) {
   main .description .yo img {
     padding: 5px; }
@@ -229,11 +268,16 @@ footer {
     grid-gap: 50px; }
   main .proyectos .proyectos-grid {
     display: grid;
-    grid-template-areas: "div div" "port port";
+    grid-template-areas: "div port" "quiz .";
     justify-content: center;
     align-items: center;
     justify-items: center;
-    grid-gap: 70px; } }
+    grid-gap: 70px; }
+    main .proyectos .proyectos-grid .cr .img-1 img {
+      width: 320px; }
+    main .proyectos .proyectos-grid .portfolio .img-2 img {
+      width: 320px;
+      height: 180px; } }
 
 @media (max-width: 768px) {
   main .description .yo img {
@@ -241,11 +285,32 @@ footer {
   main .description .yo p {
     padding: 5px; }
   main section .sobre-mi p {
-    width: 700px; } }
+    width: 700px; }
+  main .proyectos .proyectos-grid .cr .img-1 img {
+    width: 293px; }
+  main .proyectos .proyectos-grid .portfolio .img-2 img {
+    width: 293px;
+    height: 165px; } }
 
 @media (max-width: 700px) {
   main section .sobre-mi p {
-    width: 400px; } }
+    width: 400px; }
+  main .proyectos .proyectos-grid {
+    display: grid;
+    grid-template-areas: "div" "port" "quiz";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 70px; }
+    main .proyectos .proyectos-grid .cr .img-1 {
+      padding: 30px; }
+      main .proyectos .proyectos-grid .cr .img-1 img {
+        width: 400px; }
+    main .proyectos .proyectos-grid .portfolio .img-2 {
+      padding: 30px; }
+      main .proyectos .proyectos-grid .portfolio .img-2 img {
+        width: 400px;
+        height: 225px; } }
 
 @media (max-width: 600px) {
   /*-------*/
@@ -332,6 +397,9 @@ footer {
   main .proyectos .proyectos-grid .portfolio .img-2 img {
     width: 300px;
     height: 169px; }
+  main .proyectos .proyectos-grid .trivia .img-3 img {
+    width: 200px;
+    height: 200px; }
   /*=================================*/
   /*-------*/
   /*FOOTER*/

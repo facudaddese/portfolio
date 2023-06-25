@@ -11,5 +11,36 @@
                 }
             }
         }
+
+        .proyectos {
+
+            .proyectos-grid {
+
+                @include grid("div" "port" "quiz", center, center, center, 70px);
+
+                .cr {
+
+                    .img-1 {
+                        padding: 30px;
+
+                        img {
+                            width: 400px;
+                        }
+                    }
+                }
+
+                .portfolio {
+
+                    .img-2 {
+                        padding: 30px;
+
+                        img {
+                            width: 400px;
+                            height: 225px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
