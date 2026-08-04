@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --text-title: clamp(1.30rem, 3vw, 2rem);
+  --text-subtitle: clamp(1.1rem, 2.5vw, 1.5rem);
+  --text-nav-item: clamp(0.75rem, 1.5vw, 0.875rem);
+  --text-paragraph: clamp(0.95rem, 1.2vw, 1.05rem);
+}
+
+@theme {
+  --animate-marquee: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
