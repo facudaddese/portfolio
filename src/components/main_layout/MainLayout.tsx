@@ -1,10 +1,10 @@
 import AboutMe from "../about_me/AboutMe";
-import Projects from "../projects/Projects";
+import ProjectsContainer from "../projects_container/ProjectsContainer";
 const MainLayout = () => {
   return (
     <main>
       <AboutMe />
-      <Projects />
+      <ProjectsContainer />
     </main>
   );
 };

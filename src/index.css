@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --text-title: clamp(1.30rem, 3vw, 2rem);
+  --text-title: clamp(1.3rem, 3vw, 2rem);
   --text-subtitle: clamp(1.1rem, 2.5vw, 1.5rem);
+  --text-project-title: clamp(1.05rem, 1.8vw, 1.25rem);
+  --text-body: clamp(0.95rem, 1.2vw, 1.05rem);
   --text-nav-item: clamp(0.75rem, 1.5vw, 0.875rem);
   --text-paragraph: clamp(0.95rem, 1.2vw, 1.05rem);
 }
