@@ -7,7 +7,7 @@ export const projects: Project[] = [
   {
     name: "McDonald's clone",
     description:
-      "E-commerce inspirado en McDonald's desarrollado en React, con carrito de compras persistente, navegación por categorías y diseño completamente responsive. Los usuarios pueden explorar el menú por secciones, agregar productos al carrito ajustando cantidades, y ver el total actualizado en tiempo real.",
+      "E-commerce inspirado en McDonald's desarrollado en React y TypeScript, con carrito de compras persistente, navegación por categorías y diseño completamente responsive. Los usuarios pueden explorar el menú por secciones, agregar productos al carrito ajustando cantidades, y ver el total actualizado en tiempo real.",
     img: mcdonaldsImg,
     tags: [
       {
@@ -37,8 +37,8 @@ export const projects: Project[] = [
         icon: "devicon-react-original colored",
       },
       {
-        name: "TypeScript",
-        icon: "devicon-typescript-plain colored",
+        name: "Tailwind CSS",
+        icon: "devicon-tailwindcss-original colored",
       },
     ],
     preview: "https://rickmorty-multiverse.vercel.app/",
@@ -55,8 +55,8 @@ export const projects: Project[] = [
         icon: "devicon-react-original colored",
       },
       {
-        name: "TypeScript",
-        icon: "devicon-typescript-plain colored",
+        name: "Tailwind CSS",
+        icon: "devicon-tailwindcss-original colored",
       },
     ],
     preview: "https://taskmanager-fd.netlify.app/",

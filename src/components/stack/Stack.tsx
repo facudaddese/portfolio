@@ -32,8 +32,8 @@ const skills: Skill[] = [
 
 const Skills = () => {
   return (
-    <section className="flex flex-col items-center pt-10">
-      <h2 className="text-xl font-medium mb-5 text-gray-600">
+    <section className="flex flex-col items-center">
+      <h2 className="text-(length:--text-subtitle) font-heading font-semibold pb-7">
         Stack
       </h2>
       <div className="w-full max-w-xl overflow-hidden mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">

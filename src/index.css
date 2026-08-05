@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap");
 
 :root {
   --text-title: clamp(1.3rem, 3vw, 2rem);
@@ -7,6 +8,33 @@
   --text-body: clamp(0.95rem, 1.2vw, 1.05rem);
   --text-nav-item: clamp(0.75rem, 1.5vw, 0.875rem);
   --text-paragraph: clamp(0.95rem, 1.2vw, 1.05rem);
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-border: #e5e5e5;
+  --color-text: #1a1d23;
+  --color-text-muted: #6b7280;
+}
+
+.dark {
+  --color-bg: #0f1419;
+  --color-surface: #161c24;
+  --color-border: #c5c5c5;
+  --color-text: #e8e6e1;
+  --color-text-muted: #8b95a1;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+@theme {
+  --font-heading: "Sora", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @theme {

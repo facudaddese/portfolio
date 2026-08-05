@@ -1,0 +1,13 @@
+@media (max-width: 375px) {
+  .project-card {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .span-icon {
+    font-size: 12px;
+  }
+  
+  .icon {
+    font-size: 12px;
+  }
+}

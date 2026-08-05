@@ -1,28 +1,33 @@
-import { NavLink } from "react-router-dom";
+import { useTheme } from "../../hooks/useTheme";
+
+const style = "font-body hover:text-(--color-text-muted)";
 
 const NavBar = () => {
+  const { theme, handleTheme } = useTheme();
+
   return (
-    <ul className="flex justify-center items-center gap-x-1 text-(length:--text-nav-item)">
-      <li>
-        <NavLink to={"/sobre-mi"} className="px-3">
+    <ul className="flex justify-center items-center gap-x-7 px-3 text-(length:--text-nav-item)">
+      <li className="w-15">
+        <a href="#sobre-mi" className={style}>
           Sobre mí
-        </NavLink>
+        </a>
       </li>
-      <li>
-        <NavLink to={"/proyectos"} className="px-3">
+      <li className="w-15">
+        <a href="#proyectos" className={style}>
           Proyectos
-        </NavLink>
+        </a>
       </li>
-      <li>
-        <NavLink to={"/contacto"} className="px-3">
+      <li className="w-15">
+        <a href="#contacto" className={style}>
           Contacto
-        </NavLink>
+        </a>
       </li>
-      <li className="flex items-center border-l border-gray-200">
-        <span className="material-symbols-outlined pl-2 hover:cursor-pointer">
-          dark_mode
-        </span>
-        {/* <span className="material-symbols-outlined">wb_sunny</span> */}
+      <li className="flex items-center border-l pl-3 border-(--color-border)">
+        <button className="flex cursor-pointer" onClick={handleTheme}>
+          <span className="material-symbols-outlined ">
+            {theme === "dark" ? "wb_sunny" : "dark_mode"}
+          </span>
+        </button>
       </li>
     </ul>
   );

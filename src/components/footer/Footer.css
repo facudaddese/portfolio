@@ -1,0 +1,10 @@
+@media (max-width: 600px) {
+  form {
+    width: 100vw;
+  }
+  
+  form > input,
+  form > textarea {
+    width: 100%;
+  }
+}
