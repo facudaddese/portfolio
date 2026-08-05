@@ -15,7 +15,7 @@ const ProjectCard = ({
 }: Project) => {
   return (
     <div data-aos="fade-up">
-      <section className="grid justify-center items-center gap-10 grid-cols-[repeat(auto-fit,minmax(400px,1fr))]comm project-card">
+      <section className="grid justify-center items-center gap-10 grid-cols-[repeat(auto-fit,minmax(400px,1fr))] pb-10 project-card">
         <div className="overflow-hidden rounded-[10px]">
           <img
             src={img}

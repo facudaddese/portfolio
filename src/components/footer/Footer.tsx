@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer
       id="contacto"
-      className="flex flex-col items-center justify-center pt-30"
+      className="flex flex-col items-center justify-center pt-20"
     >
       <h3 className="text-center text-(length:--text-subtitle) font-heading font-semibold">
         Contacto
