@@ -25,16 +25,18 @@ const ProjectCard = ({
           />
         </div>
         <div className="flex flex-col gap-4 px-5">
-          <h3 className="text-(length:--text-project-title) font-body text-(--color-text)">
+          <h3 className="text-(length:--text-project-title) font-body">
             {name}
           </h3>
           <div className="flex items-center gap-4">
             {tags.map((tag) => (
               <span
                 key={tag.name}
-                className="flex items-center text-(--color-text-subtle) font-medium text-[14px] font-body span-icon"
+                className="flex items-center text-(--color-text-subtle) text-(length:--text-tag) font-body span-icon"
               >
-                <i className={`${tag.icon} text-[20px] pr-1 icon`}></i>
+                <i
+                  className={`${tag.icon} text-(length:--icon-tag-size) pr-1 icon`}
+                ></i>
                 {tag.name}
               </span>
             ))}

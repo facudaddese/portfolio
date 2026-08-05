@@ -2,7 +2,7 @@ import "./ProfileLinks.css";
 import { ArrowUpRight } from "lucide-react";
 
 const style =
-  "flex items-center p-2.5 font-body border border-(--color-border) rounded-full transition-transform duration-300 ease-out hover:-translate-y-1";
+  "flex items-center p-2.5 font-body border border-(--color-border) rounded-full transition-transform duration-200 ease-out hover:-translate-y-1";
 
 const ProfileLinks = () => {
   return (
