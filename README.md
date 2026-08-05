@@ -1,16 +1,16 @@
 
-# Portfolio Web
+# Bienvenido a mi portfolio personal
 
-### Bienvenido a mi portfolio personal
+¡Bienvenido a mi portfolio personal!
 
-Este refleja mi aprendizaje continuo y mi interés por el desarrollo web. Se irá actualizando constantemente a medida que mejore los proyectos existentes o cree otros nuevos. [Ver sitio](https://facundo-daddese.vercel.app/)
+Muestro los proyectos en los que fui trabajando y las tecnologías que manejo como desarrollador frontend. La sección de proyectos la voy a ir actualizando a medida que sume o mejore los que ya están. [Ver sitio](https://facundo-daddese.vercel.app/)
 
 ## ¿Qué contiene?
 
--   Mis habilidades y conocimientos relacionados con el FrontEnd.
--   Los proyectos en los que estoy trabajando o que ya completé.
--   Un formulario de contacto, desde el cual cualquier mensaje enviado llega directamente a mi email.
--   Enlaces a mis redes y a mi CV.
+-   Stack tecnológico.
+-   Proyectos terminados.
+-   Formulario de contacto: cualquier mensaje enviado llega directamente a mi email.
+-   Enlaces a GitHub, LinkedIn y mi CV.
 
 ## Tecnologías y habilidades
 
