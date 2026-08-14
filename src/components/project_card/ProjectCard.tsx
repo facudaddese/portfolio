@@ -1,9 +1,20 @@
 import "./ProjectCard.css";
 import { SquareArrowOutUpRight } from "lucide-react";
-import type { Project } from "../../interface/ProjectInterface";
 
 const style =
   "flex gap-2 justify-center items-center font-body border border-(--color-border) rounded-[10px] p-2 w-25 hover:bg-(--color-text) hover:text-(--color-bg)";
+
+interface ProjectProps {
+  name: string;
+  description: string;
+  img: string;
+  tags: {
+    name: string;
+    icon: string;
+  }[];
+  preview: string;
+  code: string;
+}
 
 const ProjectCard = ({
   name,
@@ -12,7 +23,7 @@ const ProjectCard = ({
   tags,
   preview,
   code,
-}: Project) => {
+}: ProjectProps) => {
   return (
     <div data-aos="fade-up">
       <section className="grid justify-center items-center gap-10 grid-cols-[repeat(auto-fit,minmax(400px,1fr))] pb-10 project-card">

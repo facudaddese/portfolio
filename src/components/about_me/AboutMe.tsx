@@ -15,7 +15,6 @@ const AboutMe = () => {
             alt="Foto Facundo D'Addese"
             width={250}
             className="rounded-[10px]"
-            loading="lazy"
           />
         </div>
         <div className="flex justify-center gap-7 flex-col py-5">
