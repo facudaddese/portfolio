@@ -1,6 +1,5 @@
 import mcdonaldsImg from "../assets/img/projects/img-mc.webp";
 import rickmortyImg from "../assets/img/projects/img-r_m.webp";
-import trelloImg from "../assets/img/projects/img-trello.webp";
 
 interface Project {
   name: string;
@@ -58,23 +57,5 @@ export const projects: Project[] = [
     ],
     preview: "https://rickmorty-multiverse.vercel.app/",
     code: "https://github.com/facudaddese/api-rick-morty",
-  },
-  {
-    name: "Task Manager",
-    description:
-      "Gestor de tareas estilo tablero Kanban, donde los usuarios pueden crear tareas, organizarlas en columnas personalizadas, editarlas, eliminarlas y moverlas mediante drag & drop. Las columnas también se pueden crear, renombrar, reordenar y eliminar.",
-    img: trelloImg,
-    tags: [
-      {
-        name: "React",
-        icon: "devicon-react-original colored",
-      },
-      {
-        name: "Tailwind CSS",
-        icon: "devicon-tailwindcss-original colored",
-      },
-    ],
-    preview: "https://taskmanager-fd.netlify.app/",
-    code: "https://github.com/facudaddese/task-manager-react/tree/main",
   },
 ];
