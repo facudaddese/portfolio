@@ -20,18 +20,18 @@ export const AboutMe = () => {
         </div>
         <div className="flex justify-center gap-6 flex-col pt-5 sm:w-auto w-full">
           <div className="text-center sm:text-start">
-            <h1 className="sm:text-3xl text-xl pb-1">
+            <h1 className="sm:text-3xl text-xl pb-1 font-medium">
               Hola, soy{" "}
               <strong className="text-blue-500 dark:text-blue-400">
                 Facundo {`D'Addese`}
               </strong>
             </h1>
-            <span className="text-sm sm:text-base text-gray-500">
+            <span className="text-sm sm:text-base text-gray-400 dark:text-gray-500">
               FullStack Developer
             </span>
           </div>
           <div className="max-w-140 wrap-break-word">
-            <p className="text-center sm:text-start text-[15px] sm:text-[16px]">
+            <p className="text-center sm:text-start text-[15px] sm:text-[16px] dark:text-gray-400">
               Estudiante avanzado de la Licenciatura en Sistemas. Vivo en Buenos
               Aires, Argentina, me especializo en el desarrollo de aplicaciones
               web con React, Next.js, TypeScript y Tailwind CSS, utilizando

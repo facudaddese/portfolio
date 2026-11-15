@@ -1,7 +1,6 @@
 "use client";
 
 import { useTheme } from "@/hooks";
-import Link from "next/link";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 const styles =
@@ -11,22 +10,22 @@ export const Navbar = () => {
   const { handleTheme } = useTheme();
 
   return (
-    <nav className="w-80 sm:w-auto fixed top-5 left-1/2 -translate-x-1/2 z-1000 rounded-[30px] backdrop-blur-md p-2 shadow-[0px_0px_20px_-2px_rgba(0,0,0,0.15)] border border-gray-800/10 mx-auto dark:shadow-[0px_0px_20px_-2px_rgba(0,0,0,0.6)] dark:border-white/50">
+    <nav className="w-82 sm:w-auto fixed top-5 left-1/2 -translate-x-1/2 z-1000 rounded-[30px] backdrop-blur-md p-2 shadow-[0px_0px_20px_-2px_rgba(0,0,0,0.15)] border border-gray-800/10 mx-auto dark:shadow-[0px_0px_20px_-2px_rgba(0,0,0,0.6)] dark:border-white/50">
       <ul className="flex items-center justify-center gap-x-7 px-3 w-full">
         <li>
-          <Link href="#sobre-mi" className={`${styles}`}>
+          <a href="#sobre-mi" className={`${styles}`}>
             Sobre mí
-          </Link>
+          </a>
         </li>
         <li>
-          <Link href="#proyectos" className={`${styles}`}>
+          <a href="#proyectos" className={`${styles}`}>
             Proyectos
-          </Link>
+          </a>
         </li>
         <li>
-          <Link href="#contacto" className={`${styles}`}>
+          <a href="#contacto" className={`${styles}`}>
             Contacto
-          </Link>
+          </a>
         </li>
         <button
           className="border-l border-gray-200 cursor-pointer"

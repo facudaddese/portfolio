@@ -3,7 +3,7 @@ import Image from "next/image";
 interface Skill {
   icon: string;
   name: string;
-  invert?: boolean; // logos negros: se invierten en modo oscuro
+  invert?: boolean;
 }
 
 const CDN = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons";
@@ -22,7 +22,7 @@ const skills: Skill[] = [
 export const Stack = () => {
   return (
     <section className="flex flex-col items-center py-20">
-      <h2 className="font-bold text-2xl md:text-[26px] pb-10">Stack</h2>
+      <h2 className="font-medium text-2xl md:text-[26px] pb-10">Lenguajes y frameworks</h2>
 
       <div className="w-full max-w-xl overflow-hidden mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
         <div className="flex w-max marquee hover:[animation-play-state:paused]">
