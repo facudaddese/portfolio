@@ -2,6 +2,18 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-geist-sans);
+}
+
+@layer base {
+  h1,
+  h2 {
+    font-family: var(--font-heading);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
