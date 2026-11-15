@@ -9,10 +9,10 @@ interface Skill {
 const CDN = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons";
 
 const skills: Skill[] = [
-  { icon: `${CDN}/html5/html5-original-wordmark.svg`, name: "HTML5" },
-  { icon: `${CDN}/css3/css3-original-wordmark.svg`, name: "CSS3" },
+  { icon: `${CDN}/html5/html5-original.svg`, name: "HTML5" },
+  { icon: `${CDN}/css3/css3-original.svg`, name: "CSS3" },
   { icon: `${CDN}/javascript/javascript-original.svg`, name: "JavaScript" },
-  { icon: `${CDN}/react/react-original-wordmark.svg`, name: "React" },
+  { icon: `${CDN}/react/react-original.svg`, name: "React" },
   { icon: `${CDN}/tailwindcss/tailwindcss-original.svg`, name: "Tailwind CSS" },
   { icon: `${CDN}/typescript/typescript-original.svg`, name: "TypeScript" },
   { icon: `${CDN}/nextjs/nextjs-original.svg`, name: "Next.js", invert: true },
