@@ -4,13 +4,13 @@ import { useTheme } from "@/hooks";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 const styles =
-  "hover:text-gray-500 dark:hover:text-gray-400 text-[13px] sm:text-[15px]";
+  "hover:text-gray-400 dark:hover:text-gray-500 text-[13px] sm:text-[15px]";
 
 export const Navbar = () => {
   const { handleTheme } = useTheme();
 
   return (
-    <nav className="w-82 sm:w-auto fixed top-5 left-1/2 -translate-x-1/2 z-1000 rounded-[30px] backdrop-blur-md p-2 shadow-[0px_0px_20px_-2px_rgba(0,0,0,0.15)] border border-gray-800/10 mx-auto dark:shadow-[0px_0px_20px_-2px_rgba(0,0,0,0.6)] dark:border-white/50">
+    <nav className="w-82 sm:w-auto fixed top-5 left-1/2 -translate-x-1/2 z-1000 rounded-[30px] backdrop-blur-md p-2 shadow-[0px_0px_20px_-2px_rgba(0,0,0,0.15)] border border-gray-600/15 mx-auto dark:shadow-[0px_0px_20px_-2px_rgba(0,0,0,0.6)] dark:border-white/50">
       <ul className="flex items-center justify-center gap-x-7 px-3 w-full">
         <li>
           <a href="#sobre-mi" className={`${styles}`}>

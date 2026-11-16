@@ -5,7 +5,7 @@ const styles =
 
 export const ProfileLinks = () => {
   return (
-    <div className="flex flex-wrap sm:flex-nowrap justify-center sm:justify-start items-center gap-3 w-full">
+    <div className="flex flex-wrap sm:flex-nowrap justify-center md:justify-start items-center gap-3 w-full">
       <a
         href="https://drive.google.com/file/d/1dplrGFP7DhLXLQCuj2sA-66sAV0yER_g/view?usp=sharing"
         target="_blank"

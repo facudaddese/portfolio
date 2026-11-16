@@ -9,18 +9,20 @@ interface Tool {
 const CDN = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons";
 
 const tools: Tool[] = [
-  { icon: `${CDN}/vscode/vscode-original.svg`, name: "VS Code" },
   { icon: `${CDN}/git/git-original.svg`, name: "Git" },
   { icon: `${CDN}/github/github-original.svg`, name: "GitHub", invert: true },
+  { icon: "/claude.svg", name: "Claude" },
   { icon: `${CDN}/vitejs/vitejs-original.svg`, name: "Vite" },
-  { icon: `${CDN}/vercel/vercel-original.svg`, name: "Vercel", invert: true },
   { icon: `${CDN}/postman/postman-original.svg`, name: "Postman" },
+  { icon: `${CDN}/vercel/vercel-original.svg`, name: "Vercel", invert: true },
 ];
 
 export const Tools = () => {
   return (
     <section className="flex flex-col items-center pb-20">
-      <h2 className="font-medium text-2xl md:text-[26px] pb-10">Herramientas</h2>
+      <h2 className="font-medium text-2xl md:text-[26px] pb-10">
+        Herramientas
+      </h2>
       <div className="w-full max-w-xl overflow-hidden mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
         <div className="flex w-max marquee-reverse hover:[animation-play-state:paused]">
           {[...tools, ...tools].map((tool, index) => (
