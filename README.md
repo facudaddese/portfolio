@@ -27,43 +27,8 @@ Portfolio personal desarrollado con Next.js, donde presento mis proyectos, conoc
  - [AOS](https://michalsnik.github.io/aos/) 
  - [React Icons](https://react-icons.github.io/react-icons/)
 
-    
-## Cómo ejecutar el proyecto en local
-
-Cloná el repositorio e instalá las dependencias:
-
-```
-git clone https://github.com/facudaddese/portfolio.git
-cd portfolio
-npm install
-```
-
-Creá un archivo `.env.local` en la raíz del proyecto con las variables necesarias para el formulario de contacto:
-
-```
-NEXT_PUBLIC_EMAILJS_SERVICE_ID=tu_service_id
-NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=tu_template_id
-NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=tu_public_key
-```
-
-Iniciá el servidor de desarrollo:
-
-```
-npm run dev
-```
-
-Abrí [http://localhost:3000](http://localhost:3000) en tu navegador.
-
-## Estructura del proyecto
-
-```
-app/          # Layout, página principal y estilos globales
-components/   # Componentes de la interfaz
-hooks/        # Hooks personalizados
-public/       # Imágenes y recursos estáticos
-```
 
 ## Contacto
 
 - LinkedIn: [facundodaddese](https://www.linkedin.com/in/facundodaddese/)
--  GitHub: [facudaddese](https://github.com/facudaddese)
+
