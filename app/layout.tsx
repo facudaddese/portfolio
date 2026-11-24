@@ -15,9 +15,9 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Facundo D'Addese | Fullstack Developer",
+  title: "Facundo D'Addese | Frontend Developer",
   description:
-    "Portfolio de Facundo D'Addese, estudiante avanzado de Sistemas y desarrollador Fullstack especializado en React, Next.js, TypeScript y Tailwind CSS, utilizando PostgreSQL como base de datos relacional.",
+    "Portfolio de Facundo D'Addese, estudiante avanzado de Sistemas y desarrollador frontend especializado en React, Next.js, TypeScript y Tailwind CSS.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
