@@ -14,7 +14,7 @@ export const Footer = () => {
       id="contacto"
       className="flex flex-col items-center justify-center pt-20 scroll-mt-20"
     >
-      <h2 className="text-center font-bold text-[18px] md:text-[25px]">
+      <h2 className="text-center font-medium text-2xl">
         Contacto
       </h2>
       <form
