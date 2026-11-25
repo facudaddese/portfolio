@@ -46,6 +46,7 @@ export const Carousel = ({ images }: CarouselProps) => {
                 src={image.src}
                 alt={image.alt}
                 fill
+                loading="eager"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 900px"
                 className="object-contain"
               />

@@ -1,7 +1,9 @@
+"use client";
+
 import { styleSpan } from "@/components/about-me/AboutMe";
 import { styles } from "@/components/about-me/ProfileLinks";
 import { Carousel } from "@/components/carousel/Carousel";
-import { ExternalLink } from "lucide-react";
+import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 
 interface Tags {
@@ -17,7 +19,13 @@ interface ProjectsCardProps {
   tags: Tags[];
   preview: string;
   code: string;
+  onPrev: () => void;
+  onNext: () => void;
+  position: string;
 }
+
+const arrow =
+  "flex h-9 w-9 shrink-0 cursor-pointer items-center justify-center rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-zinc-800 transition-colors";
 
 export const ProjectsCard = ({
   images,
@@ -26,12 +34,42 @@ export const ProjectsCard = ({
   tags,
   preview,
   code,
+  onPrev,
+  onNext,
+  position,
 }: ProjectsCardProps) => {
   return (
-    <div className="grid w-full min-w-0 grid-layout gap-6 p-2 md:gap-10">
+    <div className="grid w-full min-w-0 grid-layout gap-6 md:gap-10 mb-5">
       <div className="flex min-w-0 flex-col gap-5">
         <div className="flex flex-col gap-4">
-          <h2 className="text-xl text-center font-medium text-gray-600 dark:text-gray-300">{name}</h2>
+          <div className="mx-auto flex w-full max-w-4xl items-center justify-between gap-3">
+            <button
+              type="button"
+              onClick={onPrev}
+              aria-label="Proyecto anterior"
+              className={arrow}
+            >
+              <ChevronLeft size={20} />
+            </button>
+
+            <div className="flex flex-col items-center">
+              <h2 className="text-xl text-center font-medium text-gray-600 dark:text-gray-300">
+                {name}
+              </h2>
+              <span className="text-xs text-gray-500 dark:text-gray-400">
+                {position}
+              </span>
+            </div>
+
+            <button
+              type="button"
+              onClick={onNext}
+              aria-label="Proyecto siguiente"
+              className={arrow}
+            >
+              <ChevronRight size={20} />
+            </button>
+          </div>
 
           <Carousel
             images={images.map((image, index) => ({
@@ -42,11 +80,11 @@ export const ProjectsCard = ({
             }))}
           />
 
-          <div className="grid grid-cols-2 justify-content-center sm:flex flex-wrap sm:justify-center sm:items-center gap-3">
+          <div className="max-xs:grid flex justify-center flex-wrap gap-4 sm:gap-6">
             {tags.map((tag) => (
               <div
                 key={tag.name}
-                className="flex justify-center items-center gap-3"
+                className="flex items-center gap-2"
               >
                 <Image
                   src={tag.icon}
@@ -57,7 +95,9 @@ export const ProjectsCard = ({
                     tag.invert ? "dark:invert" : ""
                   }`}
                 />
-                <span className={`${styleSpan}`}>{tag.name}</span>
+                <span className={`${styleSpan} text-[13px] sm:text-[13px]`}>
+                  {tag.name}
+                </span>
               </div>
             ))}
           </div>
