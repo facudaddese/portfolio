@@ -40,7 +40,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body className="min-h-full flex flex-col bg-white text-gray-900 dark:bg-zinc-950 dark:text-gray-100 transition-colors">
         <AosInit />
-        <div className="w-full max-w-7xl mx-auto px-15 min-h-screen border bg-gray-200/10 border-gray-500/10 dark:bg-gray-500/10 dark:border-gray-100/15">
+        <div className="w-full max-w-7xl mx-auto px-7 sm:px-15 min-h-screen border bg-gray-200/10 border-gray-500/10 dark:bg-gray-500/10 dark:border-gray-100/15">
           {children}
         </div>
       </body>
