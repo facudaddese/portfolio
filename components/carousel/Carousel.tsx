@@ -26,7 +26,7 @@ export const Carousel = ({ images }: CarouselProps) => {
   }, [emblaApi]);
 
   return (
-    <div className="relative w-full min-w-0 h-55 sm:h-75 md:h-90 lg:h-100">
+    <div className="w-full min-w-0 h-40 sm:h-55 md:h-90 lg:h-100">
       <div className="h-full overflow-hidden" ref={emblaRef}>
         <div className="flex h-full">
           {images.map((image, index) => (
