@@ -7,6 +7,10 @@
   --font-heading: var(--font-geist-sans);
 }
 
+@theme {
+  --breakpoint-xs: 27.68rem;
+}
+
 @layer base {
   h1,
   h2 {

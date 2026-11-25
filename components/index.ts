@@ -5,6 +5,6 @@ export * from "./stack/Stack";
 export * from "./tools/Tools";
 export * from "./footer/Footer";
 export * from "./aos-init/AosInit";
+export * from "./projects/personal-projects/PersonalProjects";
 export * from "./projects/project-card/ProjectsCard";
-export * from "./projects/projects-container/ProjectsContainer";
 export * from "./carousel/Carousel";
