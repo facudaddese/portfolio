@@ -31,20 +31,23 @@ export const ProjectsCard = ({
     <div className="grid w-full min-w-0 grid-layout gap-6 p-2 md:gap-10">
       <div className="flex min-w-0 flex-col gap-5">
         <div className="flex flex-col gap-4">
-          <h2 className="text-xl text-center font-medium">
-            {name}
-          </h2>
+          <h2 className="text-xl text-center font-medium text-gray-600 dark:text-gray-300">{name}</h2>
 
           <Carousel
             images={images.map((image, index) => ({
               src: image.src,
               alt: `Captura ${index + 1} de ${name}`,
+              width: image.width,
+              height: image.height,
             }))}
           />
 
           <div className="grid grid-cols-2 justify-content-center sm:flex flex-wrap sm:justify-center sm:items-center gap-3">
             {tags.map((tag) => (
-              <div key={tag.name} className="flex justify-center items-center gap-3">
+              <div
+                key={tag.name}
+                className="flex justify-center items-center gap-3"
+              >
                 <Image
                   src={tag.icon}
                   alt={tag.name}
@@ -54,9 +57,7 @@ export const ProjectsCard = ({
                     tag.invert ? "dark:invert" : ""
                   }`}
                 />
-                <span className={`${styleSpan}`}>
-                  {tag.name}
-                </span>
+                <span className={`${styleSpan}`}>{tag.name}</span>
               </div>
             ))}
           </div>

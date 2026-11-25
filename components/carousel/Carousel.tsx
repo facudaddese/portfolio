@@ -9,6 +9,8 @@ interface CarouselProps {
   images: {
     src: string;
     alt: string;
+    width: number;
+    height: number;
   }[];
 }
 
@@ -25,9 +27,15 @@ export const Carousel = ({ images }: CarouselProps) => {
     return () => clearInterval(interval);
   }, [emblaApi]);
 
+  const { width, height } = images[0];
+
   return (
-    <div className="w-full min-w-0 h-40 sm:h-55 md:h-90 lg:h-100">
-      <div className="h-full overflow-hidden" ref={emblaRef}>
+    <div className="-mx-5 w-[calc(100%+2.5rem)] min-w-0 sm:mx-auto sm:w-full sm:max-w-4xl">
+      <div
+        className="overflow-hidden rounded-xl"
+        style={{ aspectRatio: `${width} / ${height}` }}
+        ref={emblaRef}
+      >
         <div className="flex h-full">
           {images.map((image, index) => (
             <div
@@ -38,7 +46,7 @@ export const Carousel = ({ images }: CarouselProps) => {
                 src={image.src}
                 alt={image.alt}
                 fill
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 800px"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 900px"
                 className="object-contain"
               />
             </div>
