@@ -39,7 +39,7 @@ export const ProjectsCard = ({
   position,
 }: ProjectsCardProps) => {
   return (
-    <div className="grid w-full min-w-0 grid-layout gap-6 md:gap-10 mb-5">
+    <div className="grid w-full min-w-0 grid-layout gap-6 md:gap-10 py-10">
       <div className="flex min-w-0 flex-col gap-5">
         <div className="flex flex-col gap-4">
           <div className="mx-auto flex w-full max-w-4xl items-center justify-between gap-3">

@@ -20,10 +20,13 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #9ca3af transparent;
 }
 
 html.dark {
   color-scheme: dark;
+  scrollbar-color: #52525b transparent;
 }
 
 @keyframes marquee {
