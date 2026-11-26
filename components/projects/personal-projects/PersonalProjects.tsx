@@ -15,7 +15,7 @@ export const PersonalProjects = () => {
   return (
     <div data-aos="fade-down" suppressHydrationWarning>
       <section id="proyectos" className="flex flex-col items-center">
-        <h2 className="font-medium text-2xl pb-10">Proyectos</h2>
+        <h2 className="font-medium max-xs:text-[20px] text-2xl pb-10">Proyectos</h2>
         <ProjectsCard
           key={project.name}
           {...project}

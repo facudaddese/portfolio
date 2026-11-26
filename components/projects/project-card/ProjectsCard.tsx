@@ -53,7 +53,7 @@ export const ProjectsCard = ({
             </button>
 
             <div className="flex flex-col items-center">
-              <h2 className="text-xl text-center font-medium text-gray-600 dark:text-gray-300">
+              <h2 className="max-xs:text-[17px] text-xl text-center font-medium text-gray-600 dark:text-gray-300">
                 {name}
               </h2>
               <span className="text-xs text-gray-500 dark:text-gray-400">
