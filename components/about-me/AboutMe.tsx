@@ -23,7 +23,7 @@ export const AboutMe = () => {
         </div>
         <div className="flex justify-center items-center md:items-start gap-6 flex-col pt-5 md:w-auto w-full">
           <div className="text-center md:text-start">
-            <h1 className="text-3xl pb-1 font-medium">
+            <h1 className="max-xs:text-2xl text-3xl pb-1 font-medium">
               Hola, soy{" "}
               <strong className="text-blue-500 dark:text-blue-400">
                 Facundo {`D'Addese`}

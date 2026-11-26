@@ -22,7 +22,7 @@ const skills: Skill[] = [
 export const Stack = () => {
   return (
     <section className="flex flex-col items-center py-20">
-      <h2 className="font-medium text-2xl pb-10">Lenguajes y frameworks</h2>
+      <h2 className="font-medium max-xs:text-[20px] text-2xl pb-10">Lenguajes y frameworks</h2>
 
       <div className="w-full max-w-xl overflow-hidden mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
         <div className="flex w-max marquee hover:[animation-play-state:paused]">

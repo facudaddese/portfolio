@@ -21,7 +21,7 @@ const tools: Tool[] = [
 export const Tools = () => {
   return (
     <section className="flex flex-col items-center pb-20">
-      <h2 className="font-medium text-2xl pb-10">
+      <h2 className="font-medium max-xs:text-[20px] text-2xl pb-10">
         Herramientas
       </h2>
       <div className="w-full max-w-xl overflow-hidden mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
