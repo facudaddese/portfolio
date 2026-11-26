@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ProfileLinks } from "./ProfileLinks";
-import yo from "../../public/yo.jpg";
+import photo from "../../public/photo.jpg";
+import { links } from "@/app/data/links";
 
 export const styleSpan =
   "text-sm sm:text-base text-gray-400 dark:text-gray-500";
@@ -14,7 +15,7 @@ export const AboutMe = () => {
             Disponible para trabajar
           </span>
           <Image
-            src={yo}
+            src={photo}
             alt="Facundo D'Addese"
             priority
             width={250}
@@ -39,7 +40,7 @@ export const AboutMe = () => {
               Tailwind CSS.
             </p>
           </div>
-          <ProfileLinks />
+          <ProfileLinks links={links} isFooter={false} />
         </div>
       </div>
     </section>
