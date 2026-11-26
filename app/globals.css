@@ -9,6 +9,7 @@
 
 @theme {
   --breakpoint-xs: 27.68rem;
+  ----breakpoint-sm: 37.5rem;
 }
 
 @layer base {

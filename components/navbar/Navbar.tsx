@@ -1,12 +1,10 @@
 "use client";
 
 import { useTheme } from "@/hooks";
-import { useScroll } from "@/hooks/useScroll";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 export const Navbar = () => {
   const { handleTheme } = useTheme();
-  const { scroll } = useScroll();
 
   const ancor = [
     { label: "Sobre mí", href: "#sobre-mi" },
@@ -16,7 +14,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`w-82 sm:w-auto fixed top-5 left-1/2 -translate-x-1/2 z-1000 rounded-[30px] backdrop-blur-sm p-2 shadow-[0px_0px_20px_-2px_rgba(0,0,0,0.15)] border border-gray-600/15 mx-auto ${scroll && "border-white/50 text-white"} dark:shadow-[0px_0px_20px_-2px_rgba(0,0,0,0.6)] dark:border-white/50`}
+      className="w-82 sm:w-auto fixed top-5 left-1/2 -translate-x-1/2 z-1000 rounded-[30px] backdrop-blur-sm p-2 shadow-[0px_0px_20px_-2px_rgba(0,0,0,0.15)] border border-gray-600/15 mx-auto dark:shadow-[0px_0px_20px_-2px_rgba(0,0,0,0.6)] dark:border-white/50"
     >
       <ul className="flex items-center justify-center gap-x-7 px-3 w-full">
         {ancor.map((item) => (
