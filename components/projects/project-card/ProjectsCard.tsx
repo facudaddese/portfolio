@@ -80,7 +80,7 @@ export const ProjectsCard = ({
             }))}
           />
 
-          <div className="max-xs:grid flex justify-center flex-wrap gap-4 sm:gap-6">
+          <div className="max-xs:grid-cols-3 flex justify-center flex-wrap gap-4 sm:gap-6">
             {tags.map((tag) => (
               <div
                 key={tag.name}
@@ -95,7 +95,7 @@ export const ProjectsCard = ({
                     tag.invert ? "dark:invert" : ""
                   }`}
                 />
-                <span className={`${styleSpan} text-[13px] sm:text-[13px]`}>
+                <span className={`${styleSpan} max-xs:text-[11px] xs:text-[13px]`}>
                   {tag.name}
                 </span>
               </div>
