@@ -22,8 +22,8 @@ export const AboutMe = () => {
             className="rounded-[10px]"
           />
         </div>
-        <div className="flex justify-center items-center md:items-start gap-6 flex-col pt-5 md:w-auto w-full">
-          <div className="text-center md:text-start">
+        <div className="flex justify-center items-center lg:items-start gap-6 flex-col pt-5 lg:w-auto w-full">
+          <div className="text-center lg:text-start">
             <h1 className="max-xs:text-2xl text-3xl pb-1 font-medium">
               Hola, soy{" "}
               <strong className="text-blue-500 dark:text-blue-400">
@@ -33,7 +33,7 @@ export const AboutMe = () => {
             <span className={`${styleSpan}`}>Frontend Developer</span>
           </div>
           <div className="max-w-140">
-            <p className="text-center md:text-start text-[15px] sm:text-[16px] dark:text-gray-400">
+            <p className="text-center lg:text-start text-[15px] sm:text-[16px] dark:text-gray-400">
               Estudiante avanzado de la Licenciatura en Sistemas y desarrollador
               frontend. Vivo en Buenos Aires, Argentina, me especializo en el
               desarrollo de aplicaciones web con React, Next.js, TypeScript y

@@ -13,11 +13,13 @@ interface ProfileLinksProps {
 }
 
 export const styles =
-  "flex items-center justify-center gap-2 border border-gray-200 rounded-full transition-transform duration-200 ease-out hover:-translate-y-1 w-45 p-0.5 text-center hover:border-gray-400 dark:border-gray-600 dark:text-gray-300";
+  "flex items-center justify-center gap-2 border border-gray-200 rounded-full transition-transform duration-200 ease-out hover:-translate-y-1 w-45 p-1 text-center hover:border-gray-400 dark:border-gray-600 dark:text-gray-300";
 
 export const ProfileLinks = ({ links, isFooter }: ProfileLinksProps) => {
   return (
-    <div className="flex flex-wrap justify-center items-center gap-3 w-full">
+    <div
+      className={`${!isFooter && "max-sm:grid"} flex flex-wrap justify-center items-center gap-3 w-full`}
+    >
       {links.map((item) => (
         <a
           key={item.href}

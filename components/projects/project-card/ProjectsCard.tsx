@@ -82,10 +82,7 @@ export const ProjectsCard = ({
 
           <div className="max-xs:grid-cols-3 flex justify-center flex-wrap gap-4 sm:gap-6">
             {tags.map((tag) => (
-              <div
-                key={tag.name}
-                className="flex items-center gap-2"
-              >
+              <div key={tag.name} className="flex items-center gap-2">
                 <Image
                   src={tag.icon}
                   alt={tag.name}
@@ -95,7 +92,9 @@ export const ProjectsCard = ({
                     tag.invert ? "dark:invert" : ""
                   }`}
                 />
-                <span className={`${styleSpan} max-xs:text-[11px] xs:text-[13px]`}>
+                <span
+                  className={`${styleSpan} max-xs:text-[11px] xs:text-[13px]`}
+                >
                   {tag.name}
                 </span>
               </div>
@@ -123,7 +122,7 @@ export const ProjectsCard = ({
               className={`${styles}`}
             >
               Code
-              <i className="devicon-github-original text-[20px] mr-2"></i>
+              <i className="devicon-github-original text-[25px] mr-2"></i>
             </a>
           </div>
         </div>
